@@ -1,8 +1,9 @@
 # Image Generation App
 
-Key aspects:
+## Key Aspects:
 
-1.= Made with React + Vite
-2.- The users can generate any image of choice using Open AI API
-3.- Styles made with PostCSS and BEM architecture. 
+1. **React + Vite**: The app is built with React and Vite.
+   
+2. **Image Generation with OpenAI**: Users can generate any image using the OpenAI API.
 
+3. **Styled with PostCSS and BEM**: Styles are managed with PostCSS following the BEM architecture.
