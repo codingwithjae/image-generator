@@ -1,0 +1,77 @@
+::root {
+  --from-box-background: #ffffff;
+  --from-textarea-radius: 8px;
+  --from-box-padding: 16px;
+  --from-textarea-placeholder-color: #888888;
+  --from-box-font-size: 16px;
+  --from-box-border: 1px solid #dddddd;
+  --button-background-color: #a34aff;
+  --button-border-radius: 50%;
+  --button-font-color: #ffffff;
+  --button-size: 48px;
+  --button-hover-background-color: #7d3be6;
+}
+
+.form {
+  background-color: var(--button-background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 250px;
+  min-width: 324px; /* Ancho mínimo del formulario */
+  max-width: 600px; /* Ancho máximo del formulario */
+  width: 100%; /* Ocupará el 100% del contenedor hasta llegar a 600px */
+
+  .form__container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    height: 100px;
+    width: 100%; /* Ocupará el 100% del ancho disponible en el contenedor */
+    max-width: 100%; /* Garantiza que no exceda el tamaño del contenedor */
+
+    .form__prompt {
+      resize: none;
+      height: 100%;
+      border-radius: 8px;
+      outline: none;
+      border: none;
+      padding: 20px;
+
+      &::placeholder {
+        color: black;
+      }
+    }
+  }
+  .form__button {
+    align-self: flex-end;
+    position: relative;
+    bottom: 45px;
+    margin-right: 15px;
+    cursor: pointer;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    background-color: #583dba;
+
+    &:hover {
+      background-color: #a34aff;
+    }
+
+    .form__button-icon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .form__button-icon {
+        color: white;
+      }
+    }
+  }
+}

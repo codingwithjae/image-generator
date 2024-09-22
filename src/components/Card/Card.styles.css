@@ -1,0 +1,38 @@
+:root {
+  --card-max-width: 512px;
+  --card-radius: 8px;
+  --image-max-width: 100%;
+  --image-height: auto;
+  --image-fit: contain;
+  --image-container-margin: 0 auto;
+  --image-container-overflow: hidden;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  margin: 0px 0 auto;
+
+  .card__image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: var(--card-max-width);
+    height: auto;
+    margin: var(--image-container-margin);
+    border-radius: var(--card-radius);
+    overflow: var(--image-container-overflow);
+
+    .card__image {
+      width: var(--image-max-width);
+      height: var(--image-height);
+      object-fit: var(--image-fit);
+      border-radius: var(--card-radius);
+    }
+  }
+}
