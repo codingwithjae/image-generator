@@ -1,5 +1,5 @@
 import Toastify from 'toastify-js';
-import "/home/johander/devProjects/reactImageGenerator/src/components/Toastify/toastMessages.js";
+import "/src/components/Toastify/toastMessages.js";
 
 export function showMessage(message, type = "success") {
   // Configure Toastify options
