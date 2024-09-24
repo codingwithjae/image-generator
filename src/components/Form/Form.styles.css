@@ -5,7 +5,7 @@
   --from-textarea-placeholder-color: #888888;
   --from-box-font-size: 16px;
   --from-box-border: 1px solid #dddddd;
-  --button-background-color: #a34aff;
+  --button-background-color: #df5c16;
   --button-border-radius: 50%;
   --button-font-color: #ffffff;
   --button-size: 48px;
@@ -13,22 +13,21 @@
 }
 
 .form {
-  background-color: var(--button-background-color);
+  background-color: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: auto;
-  height: 250px;
-  min-width: 324px; /* Ancho mínimo del formulario */
-  max-width: 600px; /* Ancho máximo del formulario */
-  width: 100%; /* Ocupará el 100% del contenedor hasta llegar a 600px */
+  min-width: 324px;
+  max-width: 625px;
+  width: 100%;
+  margin-top: 200px;
+  margin-bottom: 50px;
 
   .form__container {
     display: flex;
     flex-direction: column;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    height: 100px;
     width: 100%; /* Ocupará el 100% del ancho disponible en el contenedor */
     max-width: 100%; /* Garantiza que no exceda el tamaño del contenedor */
 
@@ -39,9 +38,11 @@
       outline: none;
       border: none;
       padding: 20px;
+      background-color: #222839;
+      color: white;
 
       &::placeholder {
-        color: black;
+        color: white;
       }
     }
   }
@@ -58,10 +59,10 @@
     align-items: center;
     border-radius: 8px;
     border: none;
-    background-color: #583dba;
+    background-color: #df5c16;
 
     &:hover {
-      background-color: #a34aff;
+      background-color: #ea7536;
     }
 
     .form__button-icon-container {

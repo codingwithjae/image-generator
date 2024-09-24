@@ -32,7 +32,7 @@ export async function handleImageGeneration(prompt, setImageUrl) {
     setImageUrl(data.data[0].url);
   } catch (error) {
     // Muestra el mensaje de error con Toastify
-    showMessage(`Error al generar la imagen: ${error.message}`, "error");
-    console.error("Error al generar la imagen:", error); // También es útil mantener un log en consola
+    showMessage(`${error.message}`, "error");
+    console.error("Error generating the image:", error); // También es útil mantener un log en consola
   }
 }

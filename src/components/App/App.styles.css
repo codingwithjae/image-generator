@@ -1,7 +1,6 @@
 .app {
   display: flex;
-  flex-direction: column; /* Coloca los elementos en columna (uno debajo del otro) */
-  justify-content: center; /* Centra verticalmente */
-  align-items: center; /* Centra horizontalmente */
-  margin: 100px 0 auto; /* Centra horizontalmente el contenido en caso de ser más pequeño */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

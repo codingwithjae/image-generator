@@ -11,6 +11,7 @@ function Form({ generatedImage }) {
     setPrompt(event.target.value);
     console.log(event.target.value);
   };
+  
 
   const handleUserSubmit = async (event) => {
     event.preventDefault();

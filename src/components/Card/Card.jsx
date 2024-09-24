@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Skeleton from "react-loading-skeleton";
-import sample from "/src/images/sample.png";
 import "react-loading-skeleton/dist/skeleton.css";
 import "./Card.styles.css";
 
 function Card({ imageUrl }) {
-  const imageSrc = imageUrl || sample; // Si no hay imageUrl, usa la imagen de muestra
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -26,7 +24,13 @@ function Card({ imageUrl }) {
         {loading ? (
           <Skeleton width={512} height={512} borderRadius={10} />
         ) : (
-          <img className="card__image" src={imageSrc} alt="Generated" />
+          imageUrl && (
+            <img
+              className="card__image"
+              src={imageUrl}
+              alt="Generated image from prompt"
+            />
+          )
         )}
       </figure>
     </section>

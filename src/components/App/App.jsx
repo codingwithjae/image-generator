@@ -13,8 +13,8 @@ function App() {
 
   return (
     <main className="app">
-      <Card imageUrl={imageUrl} />
       <Form generatedImage={generateImage} />
+      <Card imageUrl={imageUrl} />
     </main>
   );
 }
