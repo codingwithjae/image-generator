@@ -12,10 +12,10 @@ function App() {
   };
 
   return (
-    <main className="app">
+    <section className="app">
       <Form generatedImage={generateImage} />
       <Card imageUrl={imageUrl} />
-    </main>
+    </section>
   );
 }
 

@@ -18,22 +18,25 @@ function Card({ imageUrl }) {
     }
   }, [imageUrl]);
 
+  // Renderizar el componente solo si imageUrl existe, de lo contrario no mostrar nada.
+  if (!imageUrl) {
+    return null; // O puedes retornar un mensaje alternativo si lo prefieres
+  }
+
   return (
-    <section className="card">
+    <div className="card">
       <figure className="card__image-container">
         {loading ? (
           <Skeleton width={512} height={512} borderRadius={10} />
         ) : (
-          imageUrl && (
-            <img
-              className="card__image"
-              src={imageUrl}
-              alt="Generated image from prompt"
-            />
-          )
+          <img
+            className="card__image"
+            src={imageUrl}
+            alt="Generated image from prompt"
+          />
         )}
       </figure>
-    </section>
+    </div>
   );
 }
 

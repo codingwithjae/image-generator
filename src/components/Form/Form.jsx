@@ -32,7 +32,7 @@ function Form({ generatedImage }) {
   };
 
   return (
-    <section className="form">
+    <div className="form">
       <form className="form__container">
         <textarea
           className="form__prompt"
@@ -46,7 +46,7 @@ function Form({ generatedImage }) {
           <FaArrowRight className="form__button-icon" />
         </span>
       </button>
-    </section>
+    </div>
   );
 }
 
